@@ -1,8 +1,34 @@
-# Getting Started with Create React App
+# Dr.Diagno
+#### Dr.Diagno is an Artificial Intelligence based app which predicts the diseases or other health conditions based on the provided symptoms.
+---
+##### How Dr.Diagno works:
+1. Initially,the user is prompted to create an account. This helps in keeping track of the user's past predictions and some other vital information.
+2. The next page requests for the information which the app requires to carry out the diagnostic, which are Sympotoms, temperature and the number of days the user has been experiencing the symptoms.
+3. The data given by the user is transfered to the backend(django) which contains the MachineLearning models that predict and return the most possible diseases to the app.
+4. The app then generates a graph that depicts the results processsed by the MachineLearning models.
+5. After the prediction phase, details like the disease description and the appropriate precautions are loaded onto the home screen, so that the user can get a few more insights about his condition.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### Tech Stack
+* Front-End: React, Chart.js, Material UI
+* Back-End: Django Rest Framework, JSON Web Token(JWT)
+* Database: PostGreSQL
+* AI: Catboost Algorithm from Catboost package
+
+---
+## How to run this app:
+Clone this repository
+### `git clone https://github.com/GanapathyPT/Dr.Diagno_Frontend.git`
+
+change the directory
+### `cd Dr.Diagno_Backend`
+
+Install the requirements
+### `yarn`
+
+
+
 
 In the project directory, you can run:
 
@@ -14,10 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
@@ -29,42 +52,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
